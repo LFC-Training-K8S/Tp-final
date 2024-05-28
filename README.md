@@ -1,4 +1,4 @@
-# TP final : Déployer un site web wordpress sur wordpress 
+# TP final : Déployer un site web wordpress sur kubernetes 
 
 Vous venez d'integrer l'équipe DevOps de `Le Cloud Facile` et votre premiére mission est de déployer la plateforme sur kubernetes. 
 Votre superieur veut que vous lui présenter un PoC (Proof of Concept) du projet. 
