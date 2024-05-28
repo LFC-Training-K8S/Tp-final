@@ -5,7 +5,7 @@ Votre superieur veut que vous lui présenter un PoC (Proof of Concept) du projet
 Pour valider le PoC, vous devez partager les fichiers yaml sur un repo git et le partager avec le compte github [mmkmou](https://github.com/mmkmou).
 
 
-1. ** Créer un secret pour stocker le mot de passe **
+1. **Créer un secret pour stocker le mot de passe**
 
 - Créer un secret  nommé `db-password` avec les informations keys/values suivantes : 
 
@@ -25,7 +25,7 @@ user: wordpress
 ```
 Le configmap doit être stocké sur un fichier nommé `db-information.yaml`
 
-3. ** Créer le stockage pour la base de donnée mysql et l'application wordpress **
+3. **Créer le stockage pour la base de donnée mysql et l'application wordpress**
 
 - créer un PVC nommé `pvc-wordpress` avec les informations suivantes : 
 
@@ -47,7 +47,7 @@ Le PVC doit être dans un fichier yaml avec le nom `pvc-mysql.yaml`
 > Pas besoin de créer un PV sur minikube il sera créé automatiquement 
 
 
-4. ** Créer le _deployment_ `mysql` contenu dan un fichier du même nom `mysql.yaml` **
+4. **Créer le _deployment_ `mysql` contenu dan un fichier du même nom `mysql.yaml`**
 
 - Vous pouvez vous baser sur le format suivant 
 
@@ -83,10 +83,10 @@ spec:
 - Vous devez aussi monter  le volume  `pvc-mysql` créé précédemment sur  `/var/lib/mysql`
 
 
-5. Créer un service de type ClusterIP nommé `mysql-svc` pour permettre l'exposition du déploiement `mysql`. Le fichier `yaml` doit être nommé mysql-svc.yaml
+5. **Créer un service de type ClusterIP nommé `mysql-svc` pour permettre l'exposition du déploiement `mysql`. Le fichier `yaml` doit être nommé mysql-svc.yaml**
 
 
-6. Executer le yaml suivant pour créer un pod phpmyadmin et l'exposer pour accéder à la base de donnnée `mysql`
+6. **Executer le yaml suivant pour créer un pod phpmyadmin et l'exposer pour accéder à la base de donnnée `mysql`**
 
 ```yaml
 apiVersion: v1
@@ -121,7 +121,7 @@ spec:
 
 > Si vous êtes sur minikube vous devez executer la commande suivante : `minikube service phpmyadmin` 
 
-7. Créer maintenant le déploiement nommé `wordpress` avec un fichier du même nom contenant les informations suivantes : 
+7. **Créer maintenant le déploiement nommé `wordpress` avec un fichier du même nom contenant les informations suivantes :**
 
 ```yaml
 replicas: 3
@@ -138,7 +138,7 @@ env:
 ```
 
 
-8. Exposer le deploiement wordpress via NodePort ou LoadBalancer 
+8. **Exposer le deploiement wordpress via NodePort ou LoadBalancer**
 
 
 Eureka 
