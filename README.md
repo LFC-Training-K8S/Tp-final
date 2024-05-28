@@ -121,14 +121,7 @@ spec:
 
 > Si vous êtes sur minikube vous devez executer la commande suivante : `minikube service phpmyadmin` 
 
-7. Via l'interface phpmyadmin créé la base de donnée `wordpress` avec l'utilisateur `wordpress` et comme mot de passe `Azerty@12`. 
-
-Pour créer la base de donnée, vous pouvez vous référer au tuto suivant : [Creating Database for WordPress](https://developer.wordpress.org/advanced-administration/before-install/creating-database/#using-phpmyadmin)
-
-![](./asset/phpmyadmin.png)
-
-
-8. Créer maintenant le déploiement nommé `wordpress` avec un fichier du même nom contenant les informations suivantes : 
+7. Créer maintenant le déploiement nommé `wordpress` avec un fichier du même nom contenant les informations suivantes : 
 
 ```yaml
 replicas: 3
@@ -145,7 +138,7 @@ env:
 ```
 
 
-9. Exposer le deploiement wordpress via NodePort ou LoadBalancer 
+8. Exposer le deploiement wordpress via NodePort ou LoadBalancer 
 
 
 Eureka 
