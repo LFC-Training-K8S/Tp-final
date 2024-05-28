@@ -15,7 +15,7 @@ password: Azerty@12
 Le secret doit être stocké sur un fichier nommé `db-password.yaml`
 
 
-2. ** Créer un configmap pour stocker les informations de la base de donnée **
+2. **Créer un configmap pour stocker les informations de la base de donnée**
 
 - Créer un configmap  nommé `db-information` avec les informations keys/values suivantes : 
 
