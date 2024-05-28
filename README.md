@@ -1,6 +1,6 @@
 # TP final : Déployer un site web wordpress sur wordpress 
 
-Vous venez d'integrer le projet l'équipe DevOps de `Le Cloud Facile` et votre premiére mission est de déployer la plateforme sur kubernetes. 
+Vous venez d'integrer l'équipe DevOps de `Le Cloud Facile` et votre premiére mission est de déployer la plateforme sur kubernetes. 
 Votre superieur veut que vous lui présenter un PoC (Proof of Concept) du projet. 
 Pour valider le PoC, vous devez partager les fichiers yaml sur un repo git et le partager avec le compte github [mmkmou](https://github.com/mmkmou).
 
